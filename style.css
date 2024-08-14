@@ -7,13 +7,15 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 /* Ensure the background covers the full height of mobile screens */
 @media (max-width: 768px) {
     body, html {
-        background-size: cover;
+        background-size: contain;
+        background-position: top center;
     }
 }
 
