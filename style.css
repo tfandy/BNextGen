@@ -10,6 +10,13 @@ body, html {
     background: url('background.jpg') no-repeat center center/cover;
 }
 
+/* Ensure the background covers the full height of mobile screens */
+@media (max-width: 768px) {
+    body, html {
+        background-size: cover;
+    }
+}
+
 /* Hide the second page and form initially */
 .page2, .form-container {
     display: none;
