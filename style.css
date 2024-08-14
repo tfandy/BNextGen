@@ -1,0 +1,72 @@
+/* Set the entire page and html to take up the full height */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+/* Hide the second page and form initially */
+.page2, .form-container {
+    display: none;
+}
+
+/* Style the registration box on the second page */
+.register-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Style the form container */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Style labels and inputs within the form */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+/* Hide additional fields by default */
+.hidden {
+    display: none;
+}
+
+/* Style the submit button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Change button style on hover */
+button:hover {
+    background-color: #45a049;
+}

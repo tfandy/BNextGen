@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNextGen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Halaman Pertama -->
+<div class="page1" onclick="showPage2()" style="width: 100%; height: 100%;">
+    <!-- Menambahkan teks untuk menunjukkan halaman bisa diklik -->
+    <h1 style="text-align: center; margin-top: 20%;">Klik di sini untuk melanjutkan</h1>
+</div>
+
+<!-- Halaman Kedua -->
+<div class="page2">
+    <div class="register-box" onclick="showForm()">
+        <h2>Registrasi</h2>
+    </div>
+
+    <div class="form-container">
+        <form id="registrationForm">
+            <label for="fullName">Nama Lengkap:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            
+            <label for="nickname">Nama Panggilan:</label>
+            <input type="text" id="nickname" name="nickname" required>
+
+            <label for="dob">Tempat Tanggal Lahir:</label>
+            <input type="text" id="dob" name="dob" required>
+
+            <label for="tomoName">Nama TOMO:</label>
+            <input type="text" id="tomoName" name="tomoName" required>
+
+            <label for="fatherName">Nama Ayah:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+
+            <label for="motherName">Nama Ibu:</label>
+            <input type="text" id="motherName" name="motherName" required>
+
+            <label for="jobStatus">Status Pekerjaan:</label>
+            <select id="jobStatus" name="jobStatus" onchange="toggleJobFields()" required>
+                <option value="PEL">PEL</option>
+                <option value="BEKERJA">BEKERJA</option>
+            </select>
+
+            <div id="studentFields" class="hidden">
+                <label for="schoolName">Nama Sekolah/UNIV:</label>
+                <input type="text" id="schoolName" name="schoolName">
+
+                <label for="classMajor">Kelas / Jurusan:</label>
+                <input type="text" id="classMajor" name="classMajor">
+
+                <label for="batchSemester">Angkatan / Semester:</label>
+                <input type="text" id="batchSemester" name="batchSemester">
+            </div>
+
+            <div id="workFields" class="hidden">
+                <label for="workplaceName">Nama Tempat Bekerja:</label>
+                <input type="text" id="workplaceName" name="workplaceName">
+
+                <label for="startWork">Mulai Bekerja:</label>
+                <input type="text" id="startWork" name="startWork">
+
+                <label for="position">Jabatan/Posisi:</label>
+                <input type="text" id="position" name="position">
+            </div>
+
+            <label for="reason">Alasan Mengikuti B NEXT GEN:</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
